@@ -5,12 +5,10 @@ const pool = new Pool({
     host: "ec2-54-220-53-223.eu-west-1.compute.amazonaws.com",
     port: 5432,
     database: "d837r1vbf4r54s",
-      dialectOptions: {
-      ssl: {
+    ssl: {
         require: true,
         rejectUnauthorized: false
       }
-    }
 })
 
 module.exports = pool
