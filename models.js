@@ -1,18 +1,18 @@
 const Sequelize = require("sequelize");
-const sequelize = new Sequelize('postgres://qxvfcvvogtvwmf:520ce0d451b80d7329ac01335957789d11b636693363bca61db7bd80ec8ab012@ec2-54-220-53-223.eu-west-1.compute.amazonaws.com:5432/d837r1vbf4r54s
-', {
+const sequelize = new Sequelize("d837r1vbf4r54s", "qxvfcvvogtvwmf", "520ce0d451b80d7329ac01335957789d11b636693363bca61db7bd80ec8ab012", {
     dialect: "postgres",
-    protocol: 'postgres',
+    host: "ec2-54-220-53-223.eu-west-1.compute.amazonaws.com",
+    define: {
+        timestamps: false
+    },
     dialectOptions: {
       ssl: {
         require: true,
         rejectUnauthorized: false
       }
-    },
-    define: {
-        timestamps: false
     }
 });
+
 
 
 const a_client = sequelize.define("a_client", {
