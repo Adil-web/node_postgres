@@ -4,7 +4,7 @@ const sequelize = new Sequelize("d837r1vbf4r54s", "qxvfcvvogtvwmf", "520ce0d451b
     host: "ec2-54-220-53-223.eu-west-1.compute.amazonaws.com",
     define: {
         timestamps: false
-    }
+    },
     ssl: true
 });
 
