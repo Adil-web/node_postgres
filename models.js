@@ -8,7 +8,7 @@ const sequelize = new Sequelize('postgres://qxvfcvvogtvwmf:520ce0d451b80d7329ac0
         require: true,
         rejectUnauthorized: false
       }
-    }
+    },
     define: {
         timestamps: false
     }
