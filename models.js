@@ -5,6 +5,7 @@ const sequelize = new Sequelize("d837r1vbf4r54s", "qxvfcvvogtvwmf", "520ce0d451b
     define: {
         timestamps: false
     }
+    ssl: true
 });
 
 
