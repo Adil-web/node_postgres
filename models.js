@@ -1,7 +1,14 @@
 const Sequelize = require("sequelize");
-const sequelize = new Sequelize("node_postgres", "postgres", "1", {
+const sequelize = new Sequelize('postgres://qxvfcvvogtvwmf:520ce0d451b80d7329ac01335957789d11b636693363bca61db7bd80ec8ab012@ec2-54-220-53-223.eu-west-1.compute.amazonaws.com:5432/d837r1vbf4r54s
+', {
     dialect: "postgres",
-    host: "localhost",
+    protocol: 'postgres',
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
+      }
+    }
     define: {
         timestamps: false
     }
