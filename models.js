@@ -7,7 +7,10 @@ const sequelize = new Sequelize("d837r1vbf4r54s", "qxvfcvvogtvwmf", "520ce0d451b
         timestamps: false
     },
     "dialectOptions": {
-      "ssl": true
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
     }
 });
 
